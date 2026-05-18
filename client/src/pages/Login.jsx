@@ -17,6 +17,7 @@ function Login() {
 
       // 🔐 Store JWT token (IMPORTANT)
       localStorage.setItem("token", res.data.token);
+      localStorage.setItem("role", res.data.role);
 
       // 🚀 Redirect to dashboard
       navigate("/dashboard");

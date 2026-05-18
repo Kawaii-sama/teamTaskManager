@@ -14,7 +14,7 @@ function Signup() {
     try {
       setError("");
 
-      await signupUser({ name, email, password });
+      await signupUser({ name, email, password, role: "admin"});
 
       navigate("/login");
     } catch (err) {
